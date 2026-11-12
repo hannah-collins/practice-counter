@@ -41,8 +41,8 @@ def decrement(state: State) -> Page:
     return index(state)
 
 @route
-def increment5(state: State) -> Page:
-    state.count = state.count + 5
+def increment4(state: State) -> Page:
+    state.count = state.count + 4
     return index(state)
 
 @route
