@@ -23,7 +23,7 @@ def index(state: State) -> Page:
         "Current count: " + str(state.count),
         Button("+1", "increment"),
         Button("-1", "decrement"),
-        Button("+4", "increment4"),
+        Button("+5", "increment5"),
         Button("+7", "increment7"),
         Button("Reset", "reset_count")
     ])
@@ -41,8 +41,8 @@ def decrement(state: State) -> Page:
     return index(state)
 
 @route
-def increment4(state: State) -> Page:
-    state.count = state.count + 4
+def increment5(state: State) -> Page:
+    state.count = state.count + 5
     return index(state)
 
 @route
